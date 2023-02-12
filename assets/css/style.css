@@ -1,3 +1,4 @@
+
 body {
     padding: 0;
     margin: 0;
@@ -14,39 +15,51 @@ body {
     text-align: center;
 }
 
-nav {
-    width: 80%;
+.top-nav {
+    width: 85%;
     display: flex;
     background-color: #eee;
-    padding: 10px 20px;
+    padding: 10px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: auto;
     border-radius: 50px;
+    box-shadow: 10px 10px 10px -8px rgba(0,0,0,0.6);
+}
+.top-nav h1 {
+    font-size: 25px;float: left; margin-left: -10px;
 }
 .whole{
     padding-top: 6%;
     padding: 6% auto;
     position: sticky;
 }
-nav .menu {
+.top-nav .menu {
     display: flex; 
     list-style: none;
-    justify-content: center;
-}
-nav .menu li{
-    padding: 0 10px;
+    margin: 0 0 0;
 
 }
-nav .menu li a {
+.top-nav .menu li{
+    padding:10px;
+}
+.top-nav .menu li a {
     text-decoration: none;
     color: gray;
-    padding: 0 10px;
+    /* padding: -6px 10px; */
+    font-size: 16px;
+    transition: 0.9s;
+}
+.top-nav .menu li a:hover {
+    color: #615e5e;
+    text-decoration: none;
+    font-weight: 600;
+    /* font-size: 18px; */
 }
 .content{
     text-align: center;
     color: #fff;
-    width: 30%;
+    width: 35%;
     margin: 8% auto 0;
 }
 .content p{
@@ -71,6 +84,7 @@ nav .menu li a {
 .content a:hover{
     background-color: #fff;
     color: #000;
+    text-decoration: none;
 }
 
 .background-clip {
@@ -82,8 +96,9 @@ nav .menu li a {
 }
 main {
     background-color: #fff;
-    margin-top: 2%;
-    padding: 20px;
+    margin-top: 4%;
+    padding: 30px;
+    padding-top: 5%;
 }
 .title {
     text-align: center;
@@ -91,10 +106,11 @@ main {
 }
 .card{
     border: none;
+    padding-top: 6%;
 }
 
 .img-bg {
-    background-color: #ffdb8f;
+    
     display: flex;
     justify-content: center ;
     /* padding: 8px 0; */
@@ -102,6 +118,7 @@ main {
     height: 150px;
     border-radius: 50%;
     margin: 2px auto;
+    box-shadow: 10px 10px 10px -8px rgba(0,0,0,0.34);
 }
 .img-bg img{
     margin-top: -10px;
@@ -120,7 +137,106 @@ main {
     padding: 10px 18px;
     border-radius: 50px;
 }
+.btny:hover {
+    color: #905ee6;
+    text-decoration: none;
+}
+.about{
+    margin-top: 6%;
+}
+/* .img-wrapper{
+    max-width: 100%;
+    height: 25vw;
+    display: flex; justify-content: center;
+    align-items: flex-start;
+}
+.img-wrapper img{
+    max-width: 100%;
+    max-height: 100%;
 
+} */
+.carousel-item{
+    display: flex;
+    flex-direction: row;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .card img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 0;
+  }
+  .carousel-inner {
+    padding: 1em;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: #e1e1e1;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+.containerw {
+    position: relative;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f3f6f7c4;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  
+  .containerw:hover .overlay {
+    width: 100%;
+  }
+  
+  .text a{
+    white-space: nowrap; 
+    color: #000;
+    font-size: 16px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 6px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  .text a:hover{
+    color: #000;
+    text-decoration: none;
+  }
+
+  @media (min-width: 768px) {
+    .card img {
+      height: 11em;
+    }
+  }
 
 @media (min-aspect-ratio:16/9) {
     .background-clip{
@@ -137,3 +253,19 @@ main {
    
     
 }
+@media screen and (min-width:576px) {
+    .carousel-inner{
+        display: flex;
+    }
+    .carousel-item{
+        display: block;
+        margin-right: 0 ;
+        flex: 0 0 calc(100%/3);
+    }
+}
+/* .carousel-inner{
+    padding: 1em;
+}
+.card{
+    margin: 0 .5em;
+} */
