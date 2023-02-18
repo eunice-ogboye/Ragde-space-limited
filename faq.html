@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="./assets/css/faq.css">
+</head>
+<body>
+    <div class="accordion">
+        <div class="contentBx">
+            <div class="label">What can you do for me?</div>
+            <div class="content">
+                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere.</p>
+            </div>
+            <hr>
+        </div>
+        <div class="contentBx">
+            <div class="label">What is your experience?</div>
+            <div class="content">
+                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere.</p>
+            </div>
+            <hr>
+        </div>
+        <div class="contentBx">
+            <div class="label">Where are you located?</div>
+            <div class="content">
+                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod.</p>
+            </div>
+            <hr>
+        </div>
+        <div class="contentBx">
+            <div class="label">How can I contact you?</div>
+            <div class="content">
+                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere.</p>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+
+    <script>
+        const accordion = document.getElementsByClassName('contentBx');
+
+        for (i = 0; i<accordion.length; i++ ){
+            accordion[i].addEventListener('click', function(){
+                this.classList.toggle('active')
+            })
+        }
+    </script>
+</body>
+</html>

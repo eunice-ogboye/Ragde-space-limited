@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,400&display=swap');
 
 body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
 }
 .head-container{
     background-color: rgba(0, 0, 0, 0.4);
@@ -102,7 +103,7 @@ main {
 }
 .title {
     text-align: center;
-    line-height: 15px; 
+    /* line-height: 15px;  */
 }
 .card{
     border: none;
@@ -138,11 +139,19 @@ main {
     border-radius: 50px;
 }
 .btny:hover {
-    color: #905ee6;
+    background-color: #905ee6;
+    color: #fff;
     text-decoration: none;
 }
-
+.pime{
+    /* line-height: 15px; */
+}
+.pime h1{
+    margin: 0;
+    font-weight: 700;
+}
 .pime p{
+    margin: 0;
     color: #615e5e;
 }
 .pime p:first-child{
@@ -195,15 +204,44 @@ main {
     cursor: pointer;
     overflow: hidden;
     white-space: nowrap;
+    scroll-behavior:smooth;
+}
+.carousel.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel.dragging img{
+    pointer-events: none;
 }
 .carousel img{
     height: 340px;
     object-fit: cover;
     margin-left: 14px;
     width: calc(100% / 3);
+    border: 2px solid #ccc;
+    border-radius: 15px;
 }
 .carousel img:first-child{
     margin-left: 0px;
+}
+
+#clients{
+    background-color: #f3f9fc;
+    border-top-right-radius: 100px;
+    padding: 2% 1.5%;
+}
+.b-logo{
+    background: #eee;
+    width: 23%;
+    max-height: 5%;
+    margin: 0.5em;
+    text-align: center;
+    padding: 4%;
+    align-items: center;
+    border-radius: 8px;
+}
+.b-logo img{
+    max-width: 100%;
 }
 @media screen and (max-width: 900px) {
     .carousel img{

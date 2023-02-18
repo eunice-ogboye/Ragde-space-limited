@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rigde Space Limited</title>
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/faq.css">
+  <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
     integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/bootstrap-4.4.1-dist/css/bootstrap.min.css">
@@ -133,7 +135,7 @@
 
       <section class="service">
         <div class="wrapper">
-          <i class="fa-solid fa-angle-left"></i>
+          <i id="left" class="fa fa-angle-left" aria-hidden="true"></i>
           <div class="carousel">
               <img src="./assets/images/branding.jpeg" alt="">
               <img src="./assets/images/Tape Mockup.jpeg" alt="">
@@ -146,20 +148,20 @@
               <img src="./assets/images/mockup.jpeg" alt="">
               <img src="./assets/images/Tape Mockup.jpeg" alt="">
           </div>
-          <i class="fa-solid fa-angle-right"></i>
+          <i id="right" class="fa-solid fa-angle-right"></i>
         </div>
       </section>
 
     </section>
 
     <section class="about">
-      <div class="pime">
+      <div class="title pime">
         <p>INTRO</p>
         <h1>Creative Team</h1>
         <p>Sapiens is a Webflow Non Code Template for Creatives like you</p>
       </div>
 
-      <div class="row team">
+      <div class="row team about">
         <div class="col-sm-12 col-md-6 col-lg-3">
           <div class="card">
             <img src="./assets/images/team1.jpg" alt="">
@@ -214,43 +216,142 @@
           <tbody>
             <tr>
               <td>Get a fully designed Website</td>
-              <td><i class="fa-regular fa-check"></i></td>
-              <td></td>
-              <td>yes</td>
-              <td>yes</td>
+              <td><img src="./assets/images/Checkmark.png" alt="" width="13"></td>
+              <td><img src="./assets/images/Checkmark.png" alt="" width="13"></td>
+              <td><img src="./assets/images/Checkmark.png" alt="" width="13"></td>
+              <td><img src="./assets/images/Checkmark.png" alt="" width="13"></td>
+              
             </tr>
             <tr>
               <td>Webflow Development</td>
-              <td>Moe</td>
-              <td>yes</td>
-              <td>yes</td>
-              <td>yes</td>
+              <td><img src="./assets/images/Checkmark.png" alt="" width="13"></td>
+              <td><img src="./assets/images/Checkmark.png" alt="" width="13"></td>
+              <td><img src="./assets/images/Checkmark.png" alt="" width="13"></td>
+              <td><img src="./assets/images/Checkmark.png" alt="" width="13"></td>
+              
             </tr>
             <tr>
               <td>Limited Support</td>
-              <td>Moe</td>
-              <td>yes</td>
-              <td>yes</td>
-              <td>yes</td>
+              <td><img src="./assets/images/Checkmark.png" alt="" width="13"></td>
+              <td><img src="./assets/images/Checkmark.png" alt="" width="13"></td>
+              <td><img src="./assets/images/Checkmark.png" alt="" width="13"></td>
+              <td><img src="./assets/images/Checkmark.png" alt="" width="13"></td>
+
             </tr>
             <tr>
               <td>Webflow Development</td>
-              <td>Moe</td>
-              <td>yes</td>
-              <td>yes</td>
-              <td>yes</td>
+              <td><img src="./assets/images/Checkmark.png" alt="" width="13"></td>
+              <td><img src="./assets/images/Checkmark.png" alt="" width="13"></td>
+              <td><img src="./assets/images/Checkmark.png" alt="" width="13"></td>
+              <td><img src="./assets/images/Checkmark.png" alt="" width="13"></td>
+
             </tr>
             <tr>
               <td>Limited Support</td>
-              <td>yes</td>
-              <td>yes</td>
-              <td>yes</td>
-              <td>yes</td>
+              <td><img src="./assets/images/Checkmark.png" alt="" width="13"></td>
+              <td><img src="./assets/images/Checkmark.png" alt="" width="13"></td>
+              <td><img src="./assets/images/Checkmark.png" alt="" width="13"></td>
+              <td><img src="./assets/images/Checkmark.png" alt="" width="13"></td>
+              
             </tr>
           </tbody>
         </table>
       </div>
     </section>
+
+
+    <section id="faq about">
+      <div class="container">
+        <div class="row">
+          <div class="co-lg-3">
+            <div class="accordion">
+              <h1>FAQ</h1>
+              <div class="contentBx">
+                  <div class="label">What can you do for me?</div>
+                  <div class="contents">
+                      <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere.</p>
+                  </div>
+                  <hr>
+              </div>
+              <div class="contentBx">
+                  <div class="label">What is your experience?</div>
+                  <div class="contents">
+                      <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere.</p>
+                  </div>
+                  <hr>
+              </div>
+              <div class="contentBx">
+                  <div class="label">Where are you located?</div>
+                  <div class="contents">
+                      <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod.</p>
+                  </div>
+                  <hr>
+              </div>
+              <div class="contentBx">
+                  <div class="label">How can I contact you?</div>
+                  <div class="contents">
+                      <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere.</p>
+                  </div>
+                  <hr>
+              </div>
+              <a href="#" class="btny">Visit FAQ</a>
+          </div>
+          </div>
+          <div class="co-lg-10">
+            <img src="./assets/images/" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="row about">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+          <div class="title pime">
+            <p>TESTIMONIALS</p>
+            <h1>What People Say</h1>
+            <p>Sapiens is a Webflow Non Code Template for Creatives like you</p>
+          </div>
+        </div>
+        <div class="col-lg-4"></div>
+        <hr>
+        <a href="#" class="btny">Show More</a>
+      </div>
+    </section>
+
+    <section id="clients" class="about">
+      <div class="row">
+        <div class="col-lg-4 col-sm-8 col-md-8">
+          <div class="pime">
+            <p>CLIENTS</p>
+            <h1>You are in Good
+              Company</h1>
+            <p>Sapiens is your Creative Agency Webflow template we can build anything your dream.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-2 col-md-2"></div>
+        <div class="col-lg-4 col-sm-2 col-md-2 hand">
+          <img src="./assets/images/Mobile-hand.jpg" alt="" width="90">
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="b-logo">
+          <img src="./assets/images/Nike.png" alt="">
+        </div>
+        <div class="b-logo">
+          <img src="./assets/images/Airbnb.png" alt="" width="50">
+        </div>
+        <div class="b-logo">
+          <img src="./assets/images/Google.png" alt="">
+        </div>
+        <div class="b-logo">
+          <img src="./assets/images/Fb.png" alt="">
+          
+        </div>
+      </div>
+      </section>
   </main>
 
 
@@ -270,6 +371,15 @@
   <!-- Latest compiled JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./main.js" defer></script>
+  <script>
+    const accordion = document.getElementsByClassName('contentBx');
+
+    for (i = 0; i<accordion.length; i++ ){
+        accordion[i].addEventListener('click', function(){
+            this.classList.toggle('active')
+        })
+    }
+</script>
 </body>
 
 </html>
