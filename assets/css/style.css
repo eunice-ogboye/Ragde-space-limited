@@ -243,6 +243,14 @@ main {
 .b-logo img{
     max-width: 100%;
 }
+.faq-img {
+    background: url('../images/FAQ_bg.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
 @media screen and (max-width: 900px) {
     .carousel img{
         width: calc(100% / 2);
