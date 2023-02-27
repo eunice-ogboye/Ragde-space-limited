@@ -5,6 +5,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 .head-container{
     background-color: rgba(0, 0, 0, 0.4);
@@ -60,8 +61,8 @@ body {
 .content{
     text-align: center;
     color: #fff;
-    width: 35%;
-    margin: 8% auto 0;
+    /* width: 35%; */
+    margin: 8% auto;
 }
 .content p{
     font-size: 18px;
@@ -97,23 +98,25 @@ body {
 }
 main {
     background-color: #fff;
-    margin-top: 4%;
     padding: 30px;
-    padding-top: 5%;
 }
 .title {
+    display: contents;
     text-align: center;
+    margin: 10px auto;
+    padding: 10px auto;
+    justify-content: center;
     /* line-height: 15px;  */
 }
 .card{
     border: none;
-    padding-top: 6%;
+    padding-top: 5%;
 }
 
 .img-bg {
     
     display: flex;
-    justify-content: center ;
+    justify-content: space-around;
     /* padding: 8px 0; */
     width: 150px;
     height: 150px;
@@ -263,11 +266,6 @@ main {
 }
 
 
-
-
-
-
-
 .git{
     background-image: url('../images/Bg.png');
     background-position: center;
@@ -278,13 +276,6 @@ main {
     justify-content: space-around;
     align-items: baseline;
 }
-
-  @media (min-width: 768px) {
-    .card img {
-      /* height: 11em; */
-    }
-  }
-
 @media (min-aspect-ratio:16/9) {
     .background-clip{
         width: 100%;
@@ -296,8 +287,20 @@ main {
         height: 100vh;
     }
 }
+  @media (max-width: 768px) {
+    .team .card img {
+      height: 25em;
+    }
+   .about{
+    align-items: center;
+   }
+  }
+
+
 @media (max-width:920px) {
-   
+    .top-nav .menu li{
+        display: none;
+    }
     
 }
 @media screen and (min-width:576px) {

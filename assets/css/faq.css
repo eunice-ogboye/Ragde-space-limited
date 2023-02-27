@@ -1,13 +1,4 @@
-*{
-    /* margin: 0;
-    padding: 0;
-    box-sizing: border-box; */
-}
-body{
-    /* display: flex;
-    justify-content: left;
-    align-items: center; */
-}
+
 .accordion {
     max-width: 450px;
 }
@@ -41,6 +32,6 @@ body{
     /* overflow-y: auto; */
 }
 .accordion .contentBx.active .contents{
-    height: 60px;
+    height: fit-content;
     padding: 10px;
 }
