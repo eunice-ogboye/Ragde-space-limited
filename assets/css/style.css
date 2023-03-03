@@ -6,6 +6,7 @@ body {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+    background: #905ee6;
 }
 .head-container{
     background-color: rgba(0, 0, 0, 0.4);
@@ -21,11 +22,12 @@ body {
     width: 85%;
     display: flex;
     background-color: #eee;
-    padding: 10px;
+    padding: 10px 3rem;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: auto;
     border-radius: 50px;
+    position: relative;
     box-shadow: 10px 10px 10px -8px rgba(0,0,0,0.6);
 }
 .top-nav h1 {
@@ -97,21 +99,21 @@ body {
     height: 100vh;
 }
 main {
-    background-color: #fff;
-    padding: 30px;
+    background-color: #fffcfc;
+    padding: 3rem;
 }
 .title {
     display: contents;
     text-align: center;
-    margin: 10px auto;
+    margin: 15px auto;
     padding: 10px auto;
     justify-content: center;
     /* line-height: 15px;  */
 }
-.card{
+/* .card{
     border: none;
     padding-top: 5%;
-}
+} */
 
 .img-bg {
     
@@ -137,7 +139,7 @@ main {
 .btny {
     color: #905ee6;
     border: 1px solid #905ee6;
-    font-weight: 600;
+    font-weight: 400;
     padding: 10px 18px;
     border-radius: 50px;
 }
@@ -229,12 +231,12 @@ main {
 }
 
 #clients{
-    background-color: #f3f9fc;
+    background-color: #eee;
     border-top-right-radius: 100px;
     padding: 2% 1.5%;
 }
 .b-logo{
-    background: #eee;
+    background: #f3f9fc;
     width: 23%;
     max-height: 5%;
     margin: 0.5em;
@@ -254,6 +256,9 @@ main {
     display: flex;
     justify-content: center;
 }
+.bars{
+    display: none;
+}
 @media screen and (max-width: 900px) {
     .carousel img{
         width: calc(100% / 2);
@@ -264,8 +269,92 @@ main {
         width: 100%;
     }
 }
+.newsletter{
+    background: #ddd;
+    margin: 5rem 0;
+    padding: 0 2rem;
+}
+.subscibe{
+    width: 100%;
+}
+.main{
+    background: #fff;
+    padding: 10rem 6rem;
+}
+.prev p{
+    font-size: 13px;
+}
+.main input{
+    width: 50%;
+    padding: 15px;
+    margin: 20px 0 0;
+    margin-right: -4px;
+    border: 1px solid #eee;
+    outline-color: #cab0f8;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.main #email{
+    border-left: none;
+    outline: none;
+} 
+.main button{
+    border: none;
+    padding: 15px;
+    background-color: #905ee6;
+    width: 100%;
+    color: #eee;
+    font-size: 18px;
+    font-weight: 550;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.imgs{
+    display: flex;
+    position: relative;
+    padding-top: 15px;
+}
+.pointer{
+    padding: 3rem 4rem 3rem 1rem;
+    display: flex;
+    flex-direction: row;
+}
 
-
+.prev-info{
+    width: 100%;
+    margin-top: 1rem;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.prev h3{
+    font-weight: 600;
+    font-size: 18px;
+}
+.prev .img{
+    width: 300px;
+    margin-bottom: -18px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.point{
+    margin-top: 4rem;
+    margin-right: -3rem;
+}
+.prev-contact{
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border-top: 3px dashed #eee;
+}
+.blog{
+    margin: 3rem;
+}
+.blog a, .blog a:hover{
+    color: #000;
+    text-decoration: none;
+}
 .git{
     background-image: url('../images/Bg.png');
     background-position: center;
@@ -298,8 +387,34 @@ main {
 
 
 @media (max-width:920px) {
-    .top-nav .menu li{
+    
+    .top-nav .menu{
         display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: rgb(37, 37, 104);
+        top: 3rem;
+        right: 0;
+        font-size: 20px;
+    }
+    .b-logo{
+        width: auto;
+        max-height: 5%;
+        margin: 1rem;
+        border-radius: 8px;
+    }
+    .b-logo img{
+        max-width: 100%;
+    }.brand-logo{
+        display: flex;
+        flex-direction: column;
+    }
+    .bars{
+        display: block;
+        cursor: pointer;
+    }
+    .bars:hover .menu{
+        display: block;
     }
     
 }

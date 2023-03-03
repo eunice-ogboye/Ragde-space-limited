@@ -12,6 +12,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
     integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -31,6 +36,9 @@
           <li><a href="#">Blog</a></li>
           <li><a href="#">Contact Us</a></li>
         </ul>
+        <div class="bars">
+          <i class="fa fa-bars"></i>
+        </div>
       </nav>
 
       <div class="content">
@@ -43,20 +51,20 @@
   </header>
 
   <main>
-    <div class="title pime">
+    <div class="title pime about">
       <p>INTRO</p>
       <h1>Turning your Ideas a Reality</h1>
       <p>Sapiens is a Webflow Non Code Template for Creatives like you</p>
     </div>
 
-    <div class="row intro about">
+    <div class="row intro">
       <div class="col-sm-12 col-md-6 col-lg-4">
         <div class="card text-center" style="width: 18rem;">
           <div class="img-bg" style="background-color: #ffdb8f;">
             <img src="./assets/images/growth.jpg" class="card-img-top" alt="...">
           </div>
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Make your company grow</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of
               the card's content.</p>
             <a href="#" class="btny">Learn More</a>
@@ -69,7 +77,7 @@
             <img src="./assets/images/touch.jpg" class="card-img-top" alt="...">
           </div>
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">See how we can help you</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of
               the card's content.</p>
             <a href="#" class="btny">Learn More</a>
@@ -82,7 +90,7 @@
             <img src="./assets/images/help.jpg" class="card-img-top" alt="...">
           </div>
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Get in touch with us today</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of
               the card's content.</p>
             <a href="#" class="btny">Learn More</a>
@@ -97,7 +105,7 @@
           <div class="col-sm-12 col-md-6 col-lg-6 git">
             <div></div>
             <div></div>
-            <img src="./assets/images/Idea.png" alt="" width="160">
+            <img src="./assets/images/Idea (2).png" alt="" width="160">
             <img src="./assets/images/Goal.png" alt="" width="50">
             <div> </div>
           </div>
@@ -316,44 +324,231 @@
         </div>
         <div class="col-lg-4"></div>
         <hr>
-        <a href="#" class="btny">Show More</a>
+
+        <!-- ======= Testimonials Section ======= -->
+        <!-- <section class="testimonial">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="section-heading">
+                  <h2>Client's Reviews</h2>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="owl-carousel owl-theme">
+                  <div class="item">
+                    <div class="testimonial-item">
+                      <img src="assets/images/touch.jpg" alt="">
+                      <div class="quote-icon">
+                        <i class="fa fa-quote-left"></i>
+                      </div>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio ducimus quasi dicta tenetur quos est ea molestiae voluptate qui dolore autem culpa ex asperiores consequuntur minus, laudantium fugit id impedit.</p>
+                      <h4>Person's Name</h4>
+                      <span class="position">Designation Here</span>
+                      <ul class="stars">
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="testimonial-item">
+                      <img src="assets/images/touch.jpg" alt="">
+                      <div class="quote-icon">
+                        <i class="fa fa-quote-left"></i>
+                      </div>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio ducimus quasi dicta tenetur quos est ea molestiae voluptate qui dolore autem culpa ex asperiores consequuntur minus, laudantium fugit id impedit.</p>
+                      <h4>Person's Name</h4>
+                      <span class="position">Designation Here</span>
+                      <ul class="stars">
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="testimonial-item">
+                      <img src="assets/images/touch.jpg" alt="">
+                      <div class="quote-icon">
+                        <i class="fa fa-quote-left"></i>
+                      </div>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio ducimus quasi dicta tenetur quos est ea molestiae voluptate qui dolore autem culpa ex asperiores consequuntur minus, laudantium fugit id impedit.</p>
+                      <h4>Person's Name</h4>
+                      <span class="position">Designation Here</span>
+                      <ul class="stars">
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="testimonial-item">
+                      <img src="assets/images/touch.jpg" alt="">
+                      <div class="quote-icon">
+                        <i class="fa fa-quote-left"></i>
+                      </div>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio ducimus quasi dicta tenetur quos est ea molestiae voluptate qui dolore autem culpa ex asperiores consequuntur minus, laudantium fugit id impedit.</p>
+                      <h4>Person's Name</h4>
+                      <span class="position">Designation Here</span>
+                      <ul class="stars">
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+
+        <!-- <a href="#" class="btny">Show More</a> -->
+      </div>
+    </section>
+  </main>
+
+  <section id="clients" class="about">
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 col-md-7">
+        <div class="pime">
+          <p>CLIENTS</p>
+          <h1>You are in Good
+            Company</h1>
+          <p>Sapiens is your Creative Agency Webflow template we can build anything your dream.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-1 col-md-1"></div>
+      <div class="col-lg-4 col-sm-5 col-md-4 hand">
+        <img src="./assets/images/Analytics.jpg" alt="" width="90">
+      </div>
+    </div>
+    <hr>
+    <div class="row brand-logo">
+      <div class="b-logo">
+        <img src="./assets/images/Nike.png" alt="">
+      </div>
+      <div class="b-logo">
+        <img src="./assets/images/Airbnb.png" alt="" width="50">
+      </div>
+      <div class="b-logo">
+        <img src="./assets/images/Google.png" alt="">
+      </div>
+      <div class="b-logo">
+        <img src="./assets/images/Fb.png" alt="">
+        
+      </div>
+    </div>
+    </section>
+
+    <section class=" newsletter">
+      <div class="row container">
+        <div class="col-lg-7 col-sm-12">
+          <div class="main pime">
+            <h1>Newsletter</h1>
+            <h4>We are in a new digital era stay updated</h4>
+            <p>Create virtually unlimited designs with Sapiens Agency template combine its multiple layouts, enjoy a modern and beautiful design that will.</p>
+            <div class="subscibe">
+              <input type="text" placeholder="Name">
+              <input type="email" placeholder="Email" id="email">
+              <button>Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-12 col-sm-12">
+          <div class="pointer">
+            <div class="imgs">
+              <img class="point" src="./assets/images/Pointing.png" alt="" width="140" height="300">
+              <img src="/assets/images/Arrow.png" alt="" width="60" height="100">
+            </div>
+            <div class="prev">
+              <h2>Previous Newsletter!</h2>
+              <img class="img" src="./assets/images/newsletter.png" alt="">
+              <div class="prev-info">
+                
+                <h3>Get More Business!</h3>
+                  <p class="date">Newsletter 29 Nov 2022</p>
+                  <p>In this issue learn how to achieve 2x sales with just one simple change in your website plus much more...</p>
+              </div>
+              <div class="prev-contact">
+                <h3>Free Consultation!</h3>
+                <div class="row">
+                  <div class="col-lg-8">
+                    <p class="date">Riverside 25,<br>San Francisco, California</p>
+                    <p class="date"></p>
+                    <hr>
+                    <p class="date">800-234-567</p>
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="./assets/images/QR.jpg" alt="" width="70">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2"></div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="clients" class="about">
+    <section class="blog">
       <div class="row">
         <div class="col-lg-4 col-sm-6 col-md-7">
           <div class="pime">
-            <p>CLIENTS</p>
-            <h1>You are in Good
-              Company</h1>
+            <p>BLOG</p>
+            <h1>Stay Updated</h1>
             <p>Sapiens is your Creative Agency Webflow template we can build anything your dream.</p>
           </div>
         </div>
         <div class="col-lg-4 col-sm-1 col-md-1"></div>
-        <div class="col-lg-4 col-sm-5 col-md-4 hand">
-          <img src="./assets/images/Mobile-hand.jpg" alt="" width="90">
+        <div class="col-lg-4 col-sm-5 col-md-4">
         </div>
       </div>
       <hr>
       <div class="row">
-        <div class="b-logo">
-          <img src="./assets/images/Nike.png" alt="">
+        <div class="col-lg-6">
+          <div class="col-lg-12">
+            <img src="./assets/images/blog1.png" alt="">
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <p><a href="">Update</a></p>
+            </div>
+            <div class="col-lg-8">
+              <h3><a href="#">We Launch Sapiens Template this Week!</a></h3>
+              <p>Sapiens is a Webflow Non Code Template for Creatives like you</p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
         </div>
-        <div class="b-logo">
-          <img src="./assets/images/Airbnb.png" alt="" width="50">
-        </div>
-        <div class="b-logo">
-          <img src="./assets/images/Google.png" alt="">
-        </div>
-        <div class="b-logo">
-          <img src="./assets/images/Fb.png" alt="">
-          
+        <div class="col-lg-6">
+          <div class="col-lg-12">
+            <img src="./assets/images/blog2.png" alt="">
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <p><a href="">Studio</a></p>
+            </div>
+            <div class="col-lg-8">
+              <h3><a href="#">Your First Online Store With Webflow</a></h3>
+              <p>Sapiens is a Webflow Non Code Template for Creatives like you</p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
         </div>
       </div>
-      </section>
-  </main>
-
+    </section>
 
 
 
